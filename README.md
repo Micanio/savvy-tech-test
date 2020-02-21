@@ -1,2 +1,2 @@
-# savvy-tech-test
-Technical test for Savvy Marketing
+# webpack-template
+Webpack 4 webpack.config.js template
