@@ -1,3 +1,9 @@
-@include mq('desktop') {
-    
+body {
+    background: url(../../images/bg.jpg) center;
+    padding: 48px;
+    font-family: 'Fira Sans Extra Condensed';
+}
+main {
+    background-color: $white;
+    padding: 25px 75px;
 }

@@ -1,0 +1,28 @@
+.banner {
+    width: 1097px;
+    background: url(../../images/top-banner-img.png) no-repeat center;
+    height: 415px;
+    margin: 0 auto;
+    padding-top: 60px;
+    .top_text {
+        text-align: center;
+        color: $white;
+        font-weight: 700;
+        font-size: 63px;        
+    }
+    .text_block {
+        width: 640px;
+        margin: 0 auto;
+        background-color: $white;
+        text-align: center;
+        &_top {
+            color: $black;
+            font-size: 120px;
+            &_grey {
+                font-size: 120px;
+                color: $grey;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,71 @@
+header {
+    height: 300px;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    .top_bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        flex-shrink: 0;
+        .is_logo {
+            display: block;
+        }
+        .lang {
+            display: block;
+            width: 200px;
+            position: relative;
+            height: 20px;
+            border-radius: 3em;
+            border: 2px solid $black;
+            padding: 14px;
+            background-color: $white;
+            font-size: 21px;
+            text-transform: capitalize;            
+            span {
+                margin-left: 75px;
+                position: relative;
+                &::before{
+                    content: url(../../images/flag-uk.jpg);
+                    width: 42px;
+                    height: 26px;
+                    position: absolute;
+                    top: 0;
+                    left: -60px;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    width: 0; 
+                    height: 0; 
+                    border-left: 15px solid transparent;
+                    border-right: 15px solid transparent;                        
+                    border-top: 15px solid $black;
+                    top: 5px;
+                    right: -43px;
+                }
+            }
+        }
+            
+    }
+    .logo_holder {
+        position: relative;
+        width: 100%;
+        .logo_main {
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+            img {
+                margin: 0 auto;
+                display: block;
+            }
+        }
+        .logo_adi {
+            position: absolute;
+            right: 0;
+            top: 40px;
+        }
+    }
+}
