@@ -1,0 +1,36 @@
+.win {
+    background: url(../../images/black-bg-wide.png) no-repeat center;
+    background-size: contain;
+    color: $white;
+    height: 189px;
+    width: 747px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding: 50px 175px 0;
+    &_top {
+        font-size: 49px;
+    }
+    &_bottom {
+        font-size: 23px;
+        line-height: 1.5em;
+    }
+}
+
+// Media queries
+@media screen and (max-width: 768px) {
+    .win {
+        background: url(../../images/black-bg-mobile.png) no-repeat center;
+        padding: 0;
+        width: 542px;
+        height: 366px;
+        &_top {
+            margin: 50px 50px 25px 50px;
+        }
+        &_bottom {
+            margin: 0 50px;
+            text-align: justify;
+            word-spacing: 4px;
+        }
+    }
+}

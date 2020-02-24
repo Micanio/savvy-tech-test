@@ -1,0 +1,52 @@
+.signup {
+    background: url(../../images/solardrive_logo_opac.png) no-repeat center $white;
+    background-size: contain;
+    margin: 30px 50px;
+    display: flex;
+    flex-direction: row;
+    padding: 70px 0 50px;
+    &_text {
+        font-size: 49px;
+        font-weight: 700;
+        width: 63%;
+    }
+    &_arrow {
+        margin-right: 24px;
+    }
+    &_cta {
+        margin-top: -15px;
+        &_link {
+            background-color: $red;
+            color: #ffffff;
+            font-size: 49px;
+            text-decoration: none;
+            text-align: center;
+            padding: 40px 50px;
+            display: block;
+            white-space: nowrap;
+        }
+        
+    }
+}
+// Media queries
+@media screen and (max-width: 768px) {
+    .signup {
+        flex-direction: column;
+        background-image: none;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+        &_text {
+            width: 100%;
+        }
+        &_arrow {
+            display: none;
+        }
+        &_cta {
+            margin: 15px auto;
+            a {
+                margin: 15px 160px;
+            }
+        }
+    }
+}

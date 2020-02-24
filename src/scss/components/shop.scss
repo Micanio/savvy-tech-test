@@ -1,0 +1,42 @@
+.shop {
+    width: 1097px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    &_logo {
+        font-size: 60px;
+        font-weight: 700;
+    }
+    &_content {
+        &_cta {
+            a {
+                font-size: 24px;
+                background-color: $red;
+                color: $white;
+                padding: 25px 80px;
+                text-decoration: none;
+                position: absolute;
+                top: 57%;
+                left: 51%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+// Media queries
+@media screen and (max-width: 768px) {
+    .shop {
+        width: 550px;
+        margin-top: 50px;
+        &_content {
+            width: 100%;
+            display: block;
+            height: auto;
+            img {
+                width: 550px;
+                display: block;
+            }
+        }
+    }
+}

@@ -1,6 +1,7 @@
 .banner {
     width: 1097px;
     background: url(../../images/top-banner-img.png) no-repeat center;
+    background-size: contain;
     height: 415px;
     margin: 0 auto;
     padding-top: 60px;
@@ -8,13 +9,18 @@
         text-align: center;
         color: $white;
         font-weight: 700;
-        font-size: 63px;        
+        font-size: 63px; 
+        margin-bottom: 20px;       
     }
     .text_block {
-        width: 640px;
+        width: 642px;
         margin: 0 auto;
         background-color: $white;
         text-align: center;
+        display: block;
+        position: relative;
+        z-index: 1;
+        padding: 20px 0;
         &_top {
             color: $black;
             font-size: 120px;
@@ -23,6 +29,60 @@
                 color: $grey;
             }
         }
+        &_bottom {
+            background-image: url(../../images/black-bg.png);
+            color: $white;
+            height: 128px;
+            width: 642px;
+            margin: 0 auto;
+            position: relative;
+            z-index:3;
+            display: flex;
+            flex-direction: row;
+            &_image {
+                padding-right: 65px;
+                margin: 23px 0px 23px 65px;
+                border-right: 1px solid $white;
+            }
+            &_text {
+                font-size: 30px;
+                margin: 30px 74px;
+                display: block;
+            }
+
+        }
     }
 
+}
+
+// Media queries
+@media screen and (max-width: 768px) {
+    .banner {
+        width: 550px;
+        background: url(../../images/top-banner-img-mobile.png) no-repeat center;
+        .top_text {
+            font-size: 38px;
+            margin: 20px;
+        }
+        .text_block {
+            width: 446px;
+            &_top {
+                font-size: 100px;
+                &_grey {
+                    font-size: 100px;
+                }
+            }
+            &_bottom {
+                width: 446px;
+                &_image {
+                    padding-right: 48px;
+                    margin-left: 48px;
+                }
+                &_text {
+                    font-size: 22px;
+                    margin: 39px;
+                }
+            }
+        }
+    }
 }

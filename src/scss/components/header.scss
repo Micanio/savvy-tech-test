@@ -3,6 +3,7 @@ header {
     background: transparent;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 50px;
     .top_bar {
         display: flex;
         flex-direction: row;
@@ -67,5 +68,12 @@ header {
             right: 0;
             top: 40px;
         }
+    }
+}
+
+// Media queries 
+@media screen and (max-width: 768px) {
+    .logo_adi img {
+        width: 110px;
     }
 }

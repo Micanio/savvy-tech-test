@@ -1,0 +1,94 @@
+.run {
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+    &_section {
+        width: 25%;
+        &_top {
+            width: 100%;
+            position: relative;
+            margin-left: 38px;
+            height: 90px;
+            &_run {
+                font-size: 50px;
+                color: $grey;
+                transform: rotate(-90deg);
+                display: block;
+                position: absolute;
+                left: -23px;
+                top: 3px;
+            }
+            &_number {
+                position: absolute;
+                left: 37px;
+                font-size: 108px;
+                top: -26px;
+            }
+            &_km {
+                position: absolute;
+                left: 81px;
+                font-size: 66px;
+                top: -18px;
+                font-weight: 700;
+                letter-spacing: 12px;
+            }
+            &_or_more {
+                position: absolute;
+                left: 82px;
+                font-size: 30px;
+                top: 39px;
+                letter-spacing: -2px;
+            }
+            &.second {
+                .run_section_top_km,  .run_section_top_or_more {
+                    left: 86px;
+                }
+            }
+            &.third {
+                .run_section_top_km,  .run_section_top_or_more {
+                    left: 122px;
+                }
+            }
+            &.fourth {
+                .run_section_top_km,  .run_section_top_or_more {
+                    left: 133px;
+                }
+            }
+        }
+        &_bottom {
+            text-align: center;
+            position: relative;
+            &_bg {
+                font-size: 270px;
+                position: absolute;
+                display: block;
+                width: 100%;
+                opacity: 0.03;
+                top: -40px;
+                left: -10px;
+            }
+            &_img {
+                display: block;
+            }
+            &_text {
+                padding: 0 30px;
+                display: block;
+                margin-top: 20px;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+// Media Queries 
+@media screen and (max-width: 768px) {
+    .run {
+        flex-wrap: wrap;
+        margin: 50px 0;
+        &_section {
+            width: 50%;
+            margin-bottom: 50px;
+            
+        }
+    }
+}

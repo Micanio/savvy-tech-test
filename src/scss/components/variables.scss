@@ -2,22 +2,3 @@ $red: #fc383d;
 $black: #000000;
 $white: #ffffff;
 $grey: #c3c3c3;
-
-$breakpoints: (
-    "phone": 400px,
-    "tablet": 768px,
-    "desktop": 1440px
-);
-
-// Media Query mixin
-// @mixin mq($width, $type: min) {
-//     @if map_has_key($breakpoints, $width) {
-//         $width: map_get($breakpoints, $width);
-//         @if $type == max {
-//             $width: $width - 1px;
-//         }
-//         @media only screen and (#($type)-width: $width) {
-//             @content
-//         }
-//     }
-// };
