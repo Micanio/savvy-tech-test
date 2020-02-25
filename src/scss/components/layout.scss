@@ -22,7 +22,15 @@ main {
         font-size: 12px;
     }
 }
-
+a {
+    border: 3px solid $red;
+    transition: all 1s;
+}
+a:hover {
+    border: 3px solid $red !important;
+    background-color: $white !important;
+    color: $red !important;
+}
 // Media queries
 @media screen and (max-width: 768px) {
     body {

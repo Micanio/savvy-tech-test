@@ -7,7 +7,9 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const srcPath = path.join(__dirname, 'src');
 const buildPath = path.join(__dirname, 'dist');
 module.exports = {
-    entry: { main: './src/index.js' },
+    entry: { 
+        main: './src/index.js' 
+    },
     devtool: 'inline-source-map',
     output: {
       path: path.resolve(__dirname, 'dist'),

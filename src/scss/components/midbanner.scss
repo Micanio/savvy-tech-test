@@ -4,6 +4,8 @@
     background-size: contain;
     display: block;
     height: 368px;
+    width: 1097px;
+    margin: 0 auto;
     &_content {
         width: 50%;
         float: left;
@@ -39,6 +41,7 @@
     .mid_banner {
         margin: 0;
         background-image: none;
+        width: 550px;
         &_content {
             padding: 0;
             width: 100%;
